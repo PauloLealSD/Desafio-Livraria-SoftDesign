@@ -1,0 +1,131 @@
+.container {
+  min-width: 715px;
+  width: 100vw;
+  max-width: 1300px;
+  height: 100vh;
+  padding: 1rem 6rem;
+  margin: 0 auto;
+
+  & > h1 {
+    line-height: 3rem;
+    font: 700 2.5rem;
+    margin: 1rem;
+  }
+
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    h1 {
+      line-height: 4rem;
+      font: 700 2.5rem;
+      margin: 1rem;
+    }
+
+    a {
+      display: inline-block;
+      margin: 1rem 1rem 1rem 1rem;
+    }
+  }
+}
+
+.detailsContainer {
+  background: var(--gray-500);
+  width: 100%;
+  height: 25rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.9rem;
+
+  display: grid;
+  grid-template-columns: 36% 40% 20%;
+  grid-template-rows: 30% 30% 36%;
+  gap: 2%;
+
+  img {
+    display: block;
+    grid-row: 1 / 4;
+    max-width: 100%;
+    max-height: 85%;
+    margin: auto;
+    border-radius: 0.7rem;
+
+    outline: 5px solid var(--gray-500);
+    outline-offset: -3px;
+  }
+
+  h2 {
+    grid-column: 2 / 4;
+    margin: 2rem 0 auto 0;
+    font-size: 1.8rem;
+  }
+
+  h3,
+  h4,
+  strong,
+  span {
+    margin: auto auto 2rem 0;
+    font-size: 1.7rem;
+  }
+
+  h3 {
+    grid-area: 2 / 2 / span 1 / span 1;
+  }
+
+  h4 {
+    grid-area: 2 / 3 / span 1 / span 1;
+  }
+
+  strong {
+    grid-area: 3 / 2 / span 1 / span 1;
+  }
+
+  span {
+    grid-area: 3 / 3 / span 1 / span 1;
+  }
+
+  p {
+    margin: auto 0 4rem;
+  }
+
+  .autor {
+    grid-area: 2 / 2 / span 1 / span 1;
+  }
+
+  .editora {
+    grid-area: 3 / 2 / span 1 / span 1;
+  }
+
+  .year {
+    grid-area: 2 / 3 / span 1 / span 1;
+  }
+
+  .available {
+    grid-area: 3 / 3 / span 1 / span 1;
+  }
+}
+.reviewsContainer {
+  background: var(--gray-500);
+  width: 100%;
+  padding: 0.5rem 1rem;
+  border-radius: 0.9rem;
+
+  li {
+    list-style: none;
+    margin: 1rem 0;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    background-color: var(--gray-700);
+
+    & > div {
+      height: 2rem;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    p {
+      margin-top: 0.5rem;
+    }
+  }
+}

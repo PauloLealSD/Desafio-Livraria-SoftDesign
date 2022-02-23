@@ -1,0 +1,16 @@
+.container {
+  min-width: 715px;
+  width: 100vw;
+  max-width: 1300px;
+  height: 100vh;
+  padding: 1rem 6rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+
+  & > h1 {
+    line-height: 5rem;
+    font: 700 4rem "Roboto", sans-serif;
+    margin: 1rem;
+  }
+}
