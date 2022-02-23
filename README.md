@@ -7,8 +7,8 @@ Passos para rodar o backend:
 4. Execute o comando `yarn start` para rodar o servidor em `http://localhost:4000/`
 
 Rotas
-1 (get) - Rota -> `/`           Response -> `json` com a lista de livros
-2 (get) - Rota -> `/book/:id`   Response -> `json` com as informações do livro com o `id` fornecido
+1. (get) - Rota -> `/`           Response -> `json` com a lista de livros
+2. (get) - Rota -> `/book/:id`   Response -> `json` com as informações do livro com o `id` fornecido
 
 -------------------------------
 
